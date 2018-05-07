@@ -1,0 +1,18 @@
+/* css for pokemon.html */
+*{
+    /* outline: 2px dotted red; */
+}
+
+div.wrapper{
+    width:1000px;
+    min-height: 700px;
+}
+
+div.main{
+    width: 800px;
+    min-height: 700px;
+}
+
+div.side{
+    position: fixed; 
+}

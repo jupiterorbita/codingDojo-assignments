@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jq tests</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function attach_handler()
+        {
+            $('.alert').click(function(){
+                alert('you click me!');
+                });
+        }
+//---------------- above document ready---------->
+        $(document).ready(function(){
+
+            // show alert when any class of .alert gets clicked
+
+// //  crete new btn!!!
+            $('.newBtn').click(function(){
+                $('#buttons').append("<button class='alert'>I AM A NEW BUTTON!!</button>");
+                attach_handler();
+            })
+
+// // how to make then dynamic
+//             $(document).on('click', '.alert' , function(){
+//                 alert('NEW CLICKS!!');
+//             })
+// $(document).on('event','target','function')
+//event = what are you waiting for ? a submit? a clicl? a keydown?
+//target = listen for that
+
+
+     $('button').click(function(){
+         $('div#div1').append('<h2>I am a dynamically generated h2 </h2>');
+      });
+//      $(document).on('click', 'h2', function(){
+//          alert('You clicked me!');
+//         $(this).append('<h3>hi</h3'); 
+//             $('img').fadeOut(3000);
+     
+//  });
+});
+
+        
+    </script>
+</head>
+<body>
+        <h3> static content</h3>
+        <div id='div1'>
+
+            <button>asdsad</button>
+            <button class="alert">click me for a message!</button>
+            <button class="alert">click me for another message!</button>
+
+            <p class="alert">CLICK me for an alert!!!!! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa maiores deleniti molestias dolorem ipsa cumque, error repellat consectetur nulla necessitatibus obcaecati totam omnis porro vero debitis repudiandae consequuntur numquam consequatur.</p>
+
+            <button class="newBtn">NEW BUTTON!!!</button>
+        </div>    
+
+        <div id="buttons">new buttons here
+            <p>paragraph</p>
+            <img src="https://cdn.vox-cdn.com/images/verge/default-avatar.v989902574302a6378709709f7baab789b242ebbb.gif">
+
+        </div>
+
+</body>
+</html>

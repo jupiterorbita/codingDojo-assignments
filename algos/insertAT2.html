@@ -1,0 +1,21 @@
+<script>
+function insertAT(arr,idx,n){
+console.log('original ',arr)
+for (var i=0; i<arr.length; i++){
+    if (arr.length > idx)
+    {
+        arr.length += 1;
+        arr[idx+1] = arr[idx];
+        arr[idx] = n;
+    }
+}
+console.log(arr);
+}
+
+insertAT([1,2,3],2,7);
+
+
+
+
+
+</script>

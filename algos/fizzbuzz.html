@@ -1,0 +1,32 @@
+<script>
+
+/*FizzBuzz - Write a function that prints all the numbers from 1 to n, where n is a parameter of the function. Assume that n is a positive number. For multiples of 3, instead of the number, print "Fizz". For multiples of 5, instead of the number, print "Buzz". For numbers which are multiples of both 3 and 5, instead of the number, print "FizzBuzz". To test your algorithm, run fizzbuzz(100) and be sure it prints the expected output.
+
+    Example:
+    
+    Input: fizzbuzz(20)
+    Output: 1  2  Fizz  4  Buzz  Fizz  7  8  Fizz  Buzz  11  Fizz  13  14  FizzBuzz  16  17  Fizz  19  Buzz     */
+
+function fizzBuzz(n){
+    for (var i=1; i<n; i++){
+        if (i%3==0){
+            console.log('Fizz');
+        }
+        if (i%5==0){
+            console.log('Buzz');
+        }
+        if (i%15==0){
+            console.log('FIZZBUZZ');
+        }
+        else if (i%3 != 0 && i%5 !=0 && i%15 !=0) {
+            console.log(i);
+        }
+    }
+}
+fizzBuzz(35);
+
+
+
+
+
+</script>

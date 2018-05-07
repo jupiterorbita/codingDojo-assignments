@@ -1,0 +1,184 @@
+/* CSS for portfolio */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dotted red; */
+}
+
+div.container{
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    width: 1200px;
+    background-color: rgb(92,65,76);
+
+}
+
+/* rem out later */
+/* div.header, div.body, div.footer{
+    min-height: 100px;
+    width: 100%;
+    outline: 1px dotted red;
+} */
+
+    div.header{
+        min-height: 80px;
+        width: 100%;
+        background-color: rgb(250,250,250);
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    /* div.body{
+        min-height: 700px;
+        width: 100%;
+        background-color: olive 
+    } */
+
+    /* division that holds the facepic */
+    div.pic{
+        background-color: rgb(194,195,195);
+        height: 340px;
+        width: 40%;
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px;
+    }
+/* face pic */
+        img.face{
+            height: 100%;
+            width: 100%;
+        }
+
+    div.about{
+        min-height: 350px;
+        width: 50.5%;
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14pt;
+        background-color: rgb(240,240,240);
+    }
+        h1{
+            color: black;
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 20px;
+            display: inline-block;
+        }
+        h2{
+            color: black;
+            text-align: right;
+            display: inline;
+            padding-left: 600px;
+        }
+
+        h3{
+            background-color: grey;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        p{
+            background-color: rgb(240,240,240);
+            color: black;
+            padding: 10px;
+        }
+    /* LEFT MID RIGHT */
+    div.left, div.mid, div.right{
+        min-height: 400px;
+        width: 30%;
+        /* outline: 1px dotted red; */
+        background-color: rgb(240,230,240);
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        margin-top: 20px;
+        /* margin-bottom: 20px; */
+    }
+
+    div.left_bot, div.mid_bot, div.right_bot{
+        min-height: 250px;
+        width: 30%;
+        /* outline: 1px dotted red; */
+        background-color:  rgb(250,250,250);
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        /* margin-top: 20px; */
+        margin-bottom: 20px;
+    }
+        .imgshrink{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    div.footer{
+        background-color: rgb(250,250,250);
+        min-height: 100px;
+        width: 100%;
+    }
+        img.icons{
+            padding-top: 20px;
+            padding-left: 15px;
+            height: 50px;
+            width: 50px;
+            max-width: 50%;
+            display: inline-block;
+            /* outline: dotted red; */
+                }
+    div.spacer{
+        /* outline: dotted red; */
+        background-color: blue;
+    }
+    button{
+        /* outline: dotted red; */
+        border-radius: 18px;
+        margin-top: 20px;
+        margin-left: 38%;
+        margin-right: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: teal;
+        vertical-align: top;
+        text-align: center;
+        width: 70px;
+        height: 30px;
+        color: white;
+        border: 1px solid black;
+
+        /* width: 30%;
+margin-left: 35%;
+margin-right:35%;
+background-color: teal;
+border-radius: 5px;
+border: 2px solid black;
+padding: 2px;
+font-size: 14px;
+color: white;
+display: inline-block; */
+/*vertical-align: middle;*/
+    }
+
+    div.footer{
+        text-align: center;
+    }
+
+    div.lowlinks{
+        text-align: center;
+        /* outline: dotted red; */
+    }
+
+    img.mini{
+        height: 20px;
+        width: 20px;
+    }
+/* .class {
+    min-height: 100;
+    width: 100;
+    background-color: red;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+} */

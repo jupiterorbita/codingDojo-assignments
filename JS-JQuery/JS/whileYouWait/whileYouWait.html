@@ -1,0 +1,84 @@
+<html>
+<script>
+    /*
+    While You Wait
+    Create a birthday countdown.
+    
+    var daysUntilMyBirthday = 60;
+    For every day, print how many days left.
+    
+    If it's more than 30 days, print a sad message.
+    
+    If it's less than 30 days, print a message that sounds excited!
+    
+    If it's less than 5 days, SCREAM IT!
+    
+    ONCE IT'S YOUR BIRTHDAY, HAVE A PARTY!
+    
+    60 days until my birthday. Such a long time... :(
+    59 days until my birthday. Such a long time... :(
+    58 days until my birthday. Such a long time... :(
+    2 DAYS UNTIL MY BIRTHDAY!!!
+    1 DAY UNTIL MY BIRTHDAY!!!
+    ♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪ღ♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•*
+    ♪ღ♪░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░♪ღ♪
+    *•♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•«
+    */
+
+    //using for loop
+    console.log("");
+    console.log("using for loop here:");
+    var daysUntilMyBirthday = 60;
+    for (i = daysUntilMyBirthday; i >= 0; i--) {
+        if (i >= 30) {
+            console.log(i + " so far...");
+        }
+        else if (i > 5) {
+            console.log(i + " almost there!");
+        }
+        else if (i > 1) {
+            console.log(i + " DAYS LEFT!!");
+        }
+        else if (i > 0) {
+            console.log(i + " DAY !!!!");
+        }
+        else {
+            console.log("♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪ღ♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•*");
+            console.log("♪ღ♪░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░♪ღ♪");
+            console.log("*•♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•«");
+        }
+    }
+
+    console.log("");
+    console.log("using while loop here:");
+
+    daysUntilMyBirthday = 60;
+
+    while (daysUntilMyBirthday >= 0) {
+        if(daysUntilMyBirthday > 30){
+            console.log(daysUntilMyBirthday + " days until my birthday. Such a long time... ");
+        } 
+        else if (daysUntilMyBirthday >5) {
+            console.log(daysUntilMyBirthday + " days until my birthday. Almost there!");
+            // daysUntilMyBirthday--;
+        }
+        else if (daysUntilMyBirthday > 1) {
+            console.log(daysUntilMyBirthday + "  DAYS UNTIL MY BIRTHDAY!!!");
+            // daysUntilMyBirthday--;
+        }
+        else if (daysUntilMyBirthday === 1) {
+            console.log(daysUntilMyBirthday + " DAY UNTIL MY BIRTHDAY!!!");
+            // daysUntilMyBirthday--;
+        }
+        else if (daysUntilMyBirthday === 0) {
+            console.log("♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪ღ♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•*");
+            console.log("♪ღ♪░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░♪ღ♪");
+            console.log("*•♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•«");
+            // daysUntilMyBirthday--;
+        }
+        daysUntilMyBirthday--;
+    }
+
+</script>
+
+</html>

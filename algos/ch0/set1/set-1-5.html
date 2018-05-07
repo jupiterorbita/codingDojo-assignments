@@ -1,0 +1,18 @@
+<script>
+//given ANY array, return an array with the array values that are greater than its 2nd value.
+//what to do if the array is only one element long?
+
+var array = [11,22,33,44,25,15,24,6,26];
+var newarray = [];
+
+for (var idx=0; idx<array.length; idx++){
+    if (array.length === 1){
+        newarray.push(array[0]);
+    }
+    if (array[idx]>array[1]){
+        newarray.push(array[idx]);
+    }
+}
+console.log(newarray);
+
+</script>

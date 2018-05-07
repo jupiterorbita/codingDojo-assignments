@@ -1,0 +1,15 @@
+<script>
+
+function insertAt(arr,idx,n){
+    // var temp = arr[idx];
+    for (var i=idx; i<arr.length; i++){
+        var temp2 = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = temp2;
+    }
+console.log(arr);
+}
+insertAt([11,22,33,44,55],2,7);
+
+
+</script>

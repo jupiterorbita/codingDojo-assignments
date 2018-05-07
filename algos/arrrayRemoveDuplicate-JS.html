@@ -1,0 +1,24 @@
+<script>
+    //remove duplicates 
+function arrRemDup(arr) {
+	console.log(arr);
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] === arr[i+1]){
+		  for (x = i+1; x<arr.length; x++){
+		    console.log('hello x');
+		        
+		  		  arr[x] = arr[x+1];
+		  		  
+		  }
+  arr.pop();
+		}
+	
+		
+	}
+
+	console.log(arr);
+}
+arrRemDup([11, 22, 33, 33, 44, 44, 44, 55]);
+
+
+</script>

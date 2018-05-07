@@ -1,0 +1,23 @@
+This is a self assessment. You do not need to turn in your answers. Instead, use this as an opportunity to determine the best course of action for your own learning. Write your code and run it to make sure it works! Don't forget to think of edge cases and verify that your code still works. If you are able to confidently demonstrate to yourself that you can solve these problems, congratulations!! Continue challenging yourself with more difficult algorithms! Try competing in different online algorithm challenges, such as CodeWars. 
+If you are uncertain about whether your code works, continue working on these with your cohort mates. Remember that Coding Dojo's algorithm sessions are always open to alumni, feel free to join!
+
+1.  Merge Sort - Write the merge sort algorithm.
+
+2.  Heapify Array - Create a heap method that accepts an array as its own, and turns it into a rule abiding MinHeap.
+
+3.  Hash: Add - Create an add(key, val) method on a HashMap object constructor to add a new key and value to the map. This entails hashing the key, mod’ing it into the size of the array, and placing the value there.
+
+4.  Hash: Grow - Write a method grow() to increase the internal array of buckets by 50% (20-element array would become 30 elements). Afterward, rehash all keys, since your mod factor has changed. 
+
+5.  Trie: Auto Complete - Assume your trie is populated with a wide array of valid words. Given a string (presumably what user typed so far), use your trie to rapidly return an array of words beginning with that string.
+	
+	Example:
+
+	Input: mytrie contains “apple”, “ape”, “art”
+        mytrie.autocomplete(“ap”)
+	Output: [“apple”, ”ape”]
+
+6.  Graph: Shortest Path - Given an unweighted graph as well as IDs for source and destination vertices, find a path that requires minimal fewest edges. Return this path as an array of vertex IDs, or [ ] if no path exists.
+
+
+

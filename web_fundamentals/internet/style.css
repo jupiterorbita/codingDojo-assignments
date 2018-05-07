@@ -1,0 +1,230 @@
+/* style for internet html */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: dotted red; */
+}
+
+/* wrapper  */
+div.wrapper{
+    background-color: rgb(255, 255, 255);
+    min-height: 200px;
+    width: 970px;
+    padding-left: 20px;
+    /* padding: 1px; */
+}
+/* main tags style */
+h1{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+h2{
+    color: white;
+    background-color: blue;
+}
+h3{
+    color: white;
+}
+h4{
+    color: blue;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+span.redtext{
+    color: red;
+}
+span.bluetext{
+    color: blue;
+}
+br{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* top section */
+    div.topsection{
+        background-color: rgb(255, 255, 255);
+        min-height: 100px;
+        width: 970px;
+    }
+        img.globe{
+            height: 60px;
+            width: 60px;
+            display: inline-block;
+        }
+
+
+/* left nav section     */
+    div.leftsection{
+        background-color: rgb(255, 255, 255);
+        min-height: 300px;
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    }
+        div.boxtop{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            min-height: 100px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+        }
+            button.button1{
+                /* outline: dotted red; */
+                border-radius: 5px;
+                margin-top: 18px;
+                /* margin-top: 20px;
+                margin-left: 38%;
+                margin-right: 20%;
+                padding-left: 10px;
+                padding-right: 10px; */
+                background-color: rgb(0, 60, 128);
+                vertical-align: top;
+                text-align: center;
+                width: 100%;
+                height: 40px;
+                color: white;
+                border: 1px solid black;
+            }
+            button.button2{
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                background-color: orange;
+                width: 100%;
+                height: 40px;
+                color: white;
+                border: 1px solid black;
+            }
+        div.boxbot{
+            padding-top: 30px;
+            /* background-color: brown; */
+            width: 100%;
+            min-height: 250px;
+            background-image: url('images/ad_background.png');
+            text-align: center;
+        }
+            img.ninja{
+                width:80px;
+                height: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            button.buttonlearn{
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                background-color: rgb(0, 247, 255);
+                width: 80%;
+                height: 40px;
+                color: white;
+                border: 1px solid black;
+                font-size: 13pt;
+            }
+
+            
+
+
+/* main content section */
+    div.mainsection{
+        background-color: rgb(255, 255, 255);
+        min-height: 500px;
+        width: 740px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+    }
+
+/* telephone number top mid section */
+        div.telnumber{
+            background-color:white;
+            width: 100%;
+            min-height: 50px;
+            /* border-bottom: 1px solid black; */
+            margin-bottom: 10px; 
+        }
+/* left top part */
+            div.leftdns{
+                /* outline: dotted rgb(65, 18, 18); */
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 460px;
+                }
+                img.homeicon{
+                    width: 15px;
+                    display: inline-block;
+                }
+                p.homeicon{
+                    display: inline-block;
+                }
+/* right top part */
+            div.righttel{
+                    /* outline: dotted rgb(15, 35, 92); */
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                img.phone{
+                    width: 50px;
+                }
+                span.smalltext{
+                    font-size: 9pt;
+                    color: darkgray;
+                    vertical-align: top;
+                }
+                span.teltext{
+                    color: blue;
+                    font-size: 18pt;
+                }
+                p.nostyle{
+                    margin:0;
+                    padding:0;
+                }
+
+
+/* top mid section Clients and Servers */
+        div.topmid{
+            /* outline: dotted red; */
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            min-height: 350px;
+            border-top: 1px solid black;
+        }
+            ul{
+                padding-left: 40px;
+            }
+            img.client{
+                width: 300px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 245px;
+            }
+            ol{
+                padding-left: 40px;
+            }
+
+/* bottom part of the  main section "the big 3"*/
+        div.botmid{
+            /* outline: dotted red; */
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            min-height: 150px;
+            border-top: 4px solid blue;
+            border-left: 4px solid blue;
+            border-right: 4px solid blue;
+            padding: 20px;
+        }
+            img.lastimg{
+                height: 150px;
+                display: inline-block;
+            }
+            div.lastsection{
+                /* outline: dotted red; */
+                height: 150px;
+                width: 560px;
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 10px;
+            }

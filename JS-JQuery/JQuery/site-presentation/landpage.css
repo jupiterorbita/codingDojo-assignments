@@ -1,0 +1,62 @@
+/* style for presentaion index.html */
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: 2px dotted red;
+}
+
+div.wrapper{
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(196, 193, 193);
+    margin-top: 20px;
+}
+
+div.header{
+    background-color: rgb(61, 218, 87);
+    min-height: 50px;
+    width: 100%;
+    /* margin-top: 150px; */
+}
+
+div.main{
+    /* background-image: url('images/main.jpg'); */
+    /* background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain; */
+    min-height: 600px;
+    padding-top: 10px;
+    width:700px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.side{
+    width: 290px;
+    margin-left: 5px;
+    min-height: 400px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    /* background-color: skyblue; */
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+}
+
+img{
+    margin-left: 5px;
+    display: inline-block;
+    background-color: blue;
+}
+
+button{
+    text-align: center;
+
+}

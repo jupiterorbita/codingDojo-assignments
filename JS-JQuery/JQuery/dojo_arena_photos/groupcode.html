@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>jQuery Default</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $('.player_select').css('visibility', 'hidden');
+
+            $('.beach').hover(function () {
+                $('.bg').attr('src', 'beach.jpg');
+                console.log(5);
+            });
+            $('.earth').hover(function () {
+                $('.bg').attr('src', 'earth.jpg');
+                console.log(5);
+            });
+            $('.dojo').hover(function () {
+                $('.bg').attr('src', 'dojo.jpg');
+                console.log(5);
+            });
+            $('.forest').hover(function () {
+                $('.bg').attr('src', 'forest.jpg');
+                console.log(5);
+            });
+            $('.matrix').hover(function () {
+                $('.bg').attr('src', 'matrix.jpg');
+                console.log(5);
+            });
+            $('.snow').hover(function () {
+                $('.bg').attr('src', 'snow.jpg');
+                console.log(5);
+            });
+            $('button').click(function () {
+                jQuery('.arena_select').replaceWith(jQuery('.player_select'));
+                $('.player_select').css('visibility', 'visible');
+                console.log(7);
+            });
+
+
+            $('select[name="player_left"]').change(function () {
+                if($(this).val()=='donny'){
+                    console.log($(this).val());
+                    $('.left_turtles .donny').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='leo'){
+                    console.log($(this).val());
+                    $('.left_turtles .leo').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='mikey'){
+                    console.log($(this).val());
+                    $('.left_turtles .mikey').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='raphael'){
+                    console.log($(this).val());
+                    $('.left_turtles .raphael').css('visibility', 'visible')
+                    
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+            <img class ="bg"src="./black.png">
+            <div class="arena_select">
+                <h1>Select Arena</h1>
+                <div class="middle">
+                    <button class='beach'>Beach</button>
+                    <button class="earth">earth</button>
+                    <button class="dojo">Dojo</button>
+                    <button class="forest">forest</button>
+                    <button class="matrix">matrix</button>
+                    <button class="snow">snow</button>
+                </div>
+            </div>
+                <div class="player_select">
+                    <h1>Player Select</h1>
+                    <select name="player_left">
+                        <option value="donny">Donny</option>
+                        <option value="leo">Leo</option>
+                        <option value="mikey">Mikey</option>
+                        <option value="raphael">Raphael</option>
+                    </select>
+                    <select name="player_right">
+                        <option value="donny">Donny</option>
+                        <option value="leo">Leo</option>
+                        <option value="mikey">Mikey</option>
+                        <option value="raphael">Raphael</option>
+                    </select>
+                </div>
+                <div class="left_turtles">
+                    <img class="donny" src = "./donny.png">
+                    <img class="leo" src = "./leo.png">
+                    <img class="mikey" src = "./mikey.png">
+                    <img class="raphael" src = "./raphael.png">
+                </div>
+                <div class="right_turtles">
+                    <img class="donny" src = "./donny.png">
+                    <img class="leo" src = "./leo.png">
+                    <img class="mikey" src = "./mikey.png">
+                    <img class="raphael" src = "./raphael.png">
+                </div>
+            
+    </div>
+</body>
+
+</html>

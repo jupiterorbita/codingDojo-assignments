@@ -1,0 +1,34 @@
+/* users jquery css */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    /* outline: 2px dotted red; */
+}
+
+.wrapper{
+    border: 2px solid black;
+    width: 600px;
+    min-height: 500px;
+    background-color: gray;
+}
+
+div.table_head{
+    border: solid 2px black;
+    width: auto;
+    min-height: 50px;
+}
+th{
+    background-color: red;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+form{
+    display: inline-block;
+    margin-right:200px;
+}
+
+table{
+    border: 2px solid blue;
+}

@@ -1,0 +1,31 @@
+This is a self assessment. You do not need to turn in your answers. Instead, use this as an opportunity to determine the best course of action for your own learning. Write your code and run it to make sure it works! Don't forget to think of edge cases and verify that your code still works. If you are able to confidently demonstrate to yourself that you can solve these problems, you should progress to third stack algorithms. If you are uncertain about whether your code works, consider repeating second stack algorithms.
+
+1.  Delete node of given value (Doubly Linked List)
+    Given a value, remove the first node (closest to the head node) in the doubly linked list that has that value. Don't forget to consider that the value may not exist in the doubly linked list or it may be found at the head or tail of the list.
+
+2.  Binary String Expansion - You are given a string containing chars ‘0’, ‘1’ and ‘?’. For every ‘?’, either ‘0’ or ‘1’ can be substituted. Write a recursive function to return an array of all valid strings with ‘?’ chars expanded to ‘0’ or ‘1’. 
+	
+	Example:
+
+	Input: binStrExpand(“1?0?”) 
+	Output: [“1000”, “1001”, “1100”, “1101”]
+
+3.  Is Permutation - Given two strings, create a function that returns whether the second string is a permutation of the first string. In other words, return true if the second string is same as the first string, only with the characters rearranged.
+	
+	Examples:
+
+	Input: (“mister”, “stimer”)
+	Output: return true
+	
+    Input: (“mister”, “sister”)
+	Output: return false
+
+4.  Binary Search Tree (Height) - Build a height() method on the BST object that returns the total height of the tree. Return a number: the longest sequence of nodes from root node to leaf node.
+
+	Examples:
+
+	Input: A BST with only a root node
+	Output: 1
+
+    Input: A BST with a root node (value 20) with a left child (value 10) and a right child (value 30). The node with value 30 has a right child (value 40).
+    Output: 3

@@ -1,0 +1,55 @@
+<html>
+<script>
+    // Range Print
+    // Create a function that can take a start point, end point, and skip amount, to print all numbers in the range.
+
+    // For example:
+    // printRange(2, 10, 2);
+    // Would print
+
+    // 2
+    // 4
+    // 6
+    // 8
+    // (Should go UP TO, but NOT INCLUDING the end point)
+
+    // Bonus (Only If You Have Time):
+
+    // Make sure it works for negative numbers
+    // If the user doesn't pass a skip amount, make it default to 1 (printRange(4, 8); would print 4, 5, 6, 7)
+    // If the user doesn't pass an end point, make it start at 0, and end at the first (printRange(4); would print 0, 1, 2, 3)
+    // original
+    // var start;
+    // var end;
+    // var skip;
+
+    // function printRange(start, end, skip) {
+    //     for (var i = start; i < end; i += skip) {
+    //         console.log(i);
+    //     }
+    // }
+    // printRange(20, 10, 2);
+
+    //for negative numbers
+    console.log("");
+
+    var start;
+    var end;
+    var skip;
+    function printRange(start, end=0, skip=1) { //end=0 as default if nothing is passed in it, same as skip=1
+        if (skip < 0) { //if there is a negative number,
+            skip *= -1; //make it positive
+        }
+        else if (!skip){     //if there is no value for skip (falsy),
+            skip=1;     //then put a default value in it
+        }
+        for (var i=start; i<end; i+=skip) {   //main counting 
+            console.log(i);
+        }
+    }
+    printRange(4,10,2);
+
+
+</script>
+
+</html>

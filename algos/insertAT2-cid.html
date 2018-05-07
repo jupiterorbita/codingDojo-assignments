@@ -1,0 +1,22 @@
+<script>
+function insertAt(arr, idx, n){
+	if(idx>arr.length){
+		arr.length=idx-1;
+		arr[idx] = n;
+		console.log("printed first"+arr);
+	}
+	else if(idx <0){
+		console.log(arr);
+	}
+	else if(idx<arr.length){
+		arr.length+=1;
+		for(var i =arr.length-1; i>idx;i--){
+			arr[i]=arr[i-1];
+		}
+		arr[idx]=n;
+		console.log("printed last"+arr);
+	}
+
+}
+insertAt([1,3,5,9,11], 3, 42);
+</script>

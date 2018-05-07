@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="santorini-reserve.css" />
+    <title>Santorini reservation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+   $(document).on('submit','form',function()
+                {
+                    var fname = $('#first1_name').val();
+                    var lname = $('#last2_name').val();
+                        alert('thank you '+fname+' '+lname);
+                        location.href = "bonvoyage.html"
+                return false;
+                })
+
+})
+</script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Reserve your myth in Santorini!</h1>
+        <br>
+        <form action='process.php' method="post">
+            <!-- FIRST NAME -->
+            <label for="first_name">First Name : </label>
+            <input for="first_name" id='first1_name' type='text' name='first_name' placeholder="ex. John">
+            <br>
+            <!-- LAST NAME -->
+            <label for='last_name'>Last Name : </label>
+            <input for='last_name' id='last2_name' type='text' name='last_name' placeholder="ex. Smith">
+            <br>
+            <label for='email'>e-mail : </label>
+            <input for='email' id='email' name='email' type='text' placeholder="someone@somewhere.com">
+            <br>
+            <label for='contact'>Contact # : </label>
+            <input for='contact' id='contact' name='contact' type='number' placeholder="(555) - 123456" <!-- submit button -->
+            <br>
+            <input type="submit" value='submit'>
+        </form>
+        </form>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

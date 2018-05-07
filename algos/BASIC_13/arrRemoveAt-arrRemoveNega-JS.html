@@ -1,0 +1,57 @@
+<script>
+//given an arr remove at the given idx
+var myarray = [-20,-30,40,60,-18,-20]
+
+function removeAt(arr, index){
+    //begin at the index the user would like to remove
+    //make the value at this index equal to whatever is to its right
+    //move on to the next value
+    //continue this process until i get to the SECOND to last element
+    //remove the last element
+    var result = arr[index];
+    for (var i=index; i<arr.length-1; i++){
+        arr[i] = arr[i+1];
+    }
+    arr.pop();
+    return result;
+}
+
+//functions are blocks of code that do nothing until you ask them to run (also kown as calling the function)
+
+//function call are equal to whatever the function returns
+// removeAt(myarray, 3);
+// console.log(myarray);
+
+// var result = removeAt(myarray, 3);
+// console.log(result);
+// console.log(myarray);
+//consider this!!!
+//if we return arr
+//outiside the function, since we are returning an arr and the function is equal to the arr that is returned 
+//we can .pop()!! or treat it like any other function
+
+
+
+
+//remove negatives from array, return a string that has all the negative numbers that were removed
+function removeNegatives(arr){
+//i'm going to look at each element in the array
+//if its negative i'll pass the array and that index where it's negative to the removeAt function
+var resultstring ="";
+for (var i=0; i<arr.length; i++){
+    if (arr[i]<0){
+        //removeAt(arr,i); // this becomes -line under-
+        resultstring += removeAt(arr,i) + ", ";   // * ** * * * * pay attention to the += !!!!!!!
+        i--; //because it will skip the index from the other function
+    }
+}
+return resultstring;
+
+}
+
+// removeNegatives(myarray); // <== will not show anything bc no console.log anywhere so... -line under-
+console.log(removeNegatives(myarray));
+console.log(myarray);
+
+
+</script>

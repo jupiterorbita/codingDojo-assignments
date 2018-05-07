@@ -1,0 +1,51 @@
+<html>
+<head>
+        <title>Dojo Match.Me</title>
+        <link rel="stylesheet" type="text/css" href="webfundproj.css">
+        <meta charset="UTF-8">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+              $(document).ready(function(){
+  
+                var flag = false; //if any card is selected
+                var currentCardState = ""; //if they are matched
+
+                $('img').click(function(){
+                        console.log('clicked!');
+                        if (!flag){
+                            currentCardState = $(this).attr('src2')
+                            console.log(currentCardState);
+                        }
+                });
+
+            });
+  
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Dojo Match.Me</h1>
+        </div>
+        <div id="wrapper">
+            <div class="block">
+                <img src="dojologo.jpg" scr2="1.jpeg" scr3="rajanturb.jpg">
+            </div>
+            <div class="block">
+                <img src="dojologo.jpg" alt="dojo logo" ray="rajanturb.jpg">
+            </div>
+            <div class="block">
+                <img src="dojologo.jpg" alt="dojo logo" ray="rajanturb.jpg">
+            </div>
+            <div class="block">
+                <img src="dojologo.jpg" alt="dojo logo" ray="rajanturb.jpg">
+            </div>
+            
+        </div>
+        <div id="footer">
+            
+        </div>
+    </body>
+
+
+
+</html>

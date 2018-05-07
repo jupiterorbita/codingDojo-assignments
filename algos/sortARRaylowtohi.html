@@ -1,0 +1,20 @@
+<script>
+function sortARR(arr){
+var temp = arr[0];
+for (var i=0; i<arr.length; i++)
+{
+    for (var x=0; x<arr.length; x++)
+    {
+        if (arr[x] > arr[x+1]){
+            temp = arr[x];
+            arr[x] = arr[x+1];
+            arr[x+1] = temp;
+        }
+    }
+console.log(arr);
+}
+}
+sortARR([12,5,7,10,3]);
+
+
+</script>

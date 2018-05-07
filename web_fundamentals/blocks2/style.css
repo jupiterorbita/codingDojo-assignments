@@ -1,0 +1,85 @@
+/* style for blocks 2 */
+
+*{
+    outline: dotted red;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.wrapper{
+    min-height: 700px;
+    width: 1000px;
+    background-color: gray;
+}
+
+    div.a1{
+        height: 100px;
+        width: 980px;
+        background-color: red;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    div.a2{
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+        background-color: goldenrod;
+        display: inline-block;
+    }
+    div.a3{
+        height: 200px;
+        width: 200px;
+        margin-left: 180px;
+        background-color: goldenrod;
+        display: inline-block;
+    }
+    div.a4{
+        height: 200px;
+        width: 200px;
+        margin-left: 180px;
+        background-color: goldenrod;
+        display: inline-block;
+    }
+    div.a5{
+        height: 150px;
+        width: 980px;
+        background-color:cyan;
+        margin: 10px;
+        display: inline-block;
+    }
+        div.a6{
+            height: 80px;
+            width: 400px;
+            background-color: rgb(41, 165, 47);
+            margin: 35px;    
+            margin-left: 300px;
+            display: inline-block;
+        }
+    div.a7{
+        height: 170px;
+        width: 190px;
+        background-color: rgb(94, 126, 141);
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.a8{
+        height: 170px;
+        width: 190px;
+        background-color: rgb(94, 126, 141);
+        margin: 10px;
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.a9{
+        
+        height: 190px;
+        width: 300px;
+        background-color: rgb(94, 126, 141);
+        margin: 10px;
+        margin-left: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }

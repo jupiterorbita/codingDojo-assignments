@@ -1,0 +1,89 @@
+/*This is a default CSS document*/
+*{
+    padding:0px;
+    margin:0px;
+    border:red dashed 1px;
+}
+/*This is the start of the webpage*/
+.wrapper{
+    min-height:1000px;
+    min-width:1000px;
+    background-color:white;
+}
+    /*Define the classes below*/
+    .background{
+        height:500px;
+        width:800px;
+        background-color:black;
+        border:gray solid 5px;
+        margin:auto;
+    }
+        .arena_select{
+            margin: auto;
+            margin-top: 120px;
+            border-radius:12px;
+            height:150px;
+            width:300px;
+            background-color:gray;
+            border:darkgray solid 3px;
+            padding: 10px;
+        }
+
+        .middle{
+            margin-top: 15px;
+        }
+            .arena_select h1{
+                text-align: center;
+                color: orange;
+            }
+        
+            .middle button{
+                background-color: rgb(214, 214, 214);
+                height: 30px;
+                width: 75px;
+                margin: 5px;
+                margin-left: 10px;
+                border-radius: 4px;
+            }
+            .beach{
+                background-image:url(./beach.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }
+            .earth{
+                background-image:url(./earth.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }
+            .dojo{
+                background-image:url(./dojo.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }
+            .forest{
+                background-image:url(./forest.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }
+            .matrix{
+                background-image:url(./matrix.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }
+            .snow{
+                background-image:url(./snow.jpg);
+                height:500px;
+                width:800px;
+                border:gray solid 5px;
+                margin:auto;
+            }

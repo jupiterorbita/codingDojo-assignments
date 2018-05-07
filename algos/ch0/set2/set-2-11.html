@@ -1,0 +1,17 @@
+<script>
+    /* given an array, write a fuction that changes all positive numbers 
+    in the array to 'big'. ex:
+    remove_positive([-1,3,5,-5]) returns [-1,'big','big',-5] */
+
+    function removePositive(aa) {
+        console.log('aaa', aa); //shows the original array
+        for (var idx = 0; idx < aa.length; idx++) {  //increments the index
+            if (aa[idx] > 0) {  //if an index of the array is positive
+                aa[idx] = 'big';    // change it to a string
+            }
+        }
+        console.log(aa);
+    }
+    removePositive([-1, 3, 5, -5]);
+
+</script>

@@ -1,0 +1,139 @@
+/* style for internet 2nd try */
+*{
+    /* outline: dotted red; */
+    margin: 0px;
+    padding:0px;
+}
+
+div.wrapper{
+    width: 1000px;
+    min-height: 400px;
+    background-color: gray;
+}
+
+h1.toph1{
+    color: white;
+    background-color: fuchsia;
+    display: inline-block;
+}
+h1.righth1{
+    color: brown;
+    display: inline-block;
+    margin-left: 100px;
+    background-color: cornflowerblue;
+    margin-right: 250px;
+}
+
+h1.toph1, h1.under{
+    font-size: 20px;
+}
+h1.underreal{
+    color: chartreuse;
+    display: inline-block;
+    /* margin-left: 240px; */
+}
+
+span.bluetext{
+    color: blue;
+}
+div.header{
+    width: 960px;
+    min-height: 80px;
+    background-image: url('images/ad_background.png');
+    background-size: 300px 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+div.leftside{
+    min-height: 400px;
+    width: 200px;
+    background-color: aqua;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20px;
+}
+    div.lefttop{
+        min-height: 250px;
+        width: 200px;
+        background-color: red;
+    }
+div.midplace{
+    display: inline-block;
+    background-color: gray;
+    min-height: 500px;
+    width: 740px;
+}
+
+
+input.search{
+    border: 2px solid blue;
+}
+button{
+    height: 30px;
+    width: 60px;
+}
+
+button.button2{
+    background-color: aqua;
+    border-radius: 10px;
+    color: red;
+    width: 100px;
+    height: 25px;
+    font-size: 14pt;
+}
+
+
+
+    div.midtop{
+        min-height: 100px;
+        width: 150px;
+        background-color: rgb(29, 133, 53);
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    div.topleft{
+        min-height: 100px;
+        width: 540px;
+        background-color: rgb(5, 49, 47);
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 5px;
+    }
+        
+
+    div.midmid{
+        min-height: 100px;
+        width: 700px;
+        background-color: rgb(190, 245, 41);
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 20px;
+    }
+        /* ninja */
+        img.ninja{
+            width: 50px;
+            margin-left: 250px;
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        div.nexttoninja{
+            display: inline-block;
+        }
+p{
+    /* display: inline-block; */
+    vertical-align: top;
+    margin: 0px;
+}
+        
+    div.midbot{
+        min-height: 100px;
+        width: 700px;
+        background-color: rgb(211, 41, 245);
+        vertical-align: top;
+        display: inline-block;
+        /* margin-left: 20px; */
+    }

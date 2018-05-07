@@ -1,0 +1,26 @@
+<script>
+    //array second-largest, given arr return the second to largest. ex. [42,1,4,Math.PI,7], return 7, if the arr is too short return null.
+
+    function arrSecondToLargest(arr) {
+
+        console.log('original arr = ', arr);
+    for (var x=0; x<arr.length; x++){
+        for (var i = 0; i < arr.length; i++) {
+            // console.log('i ',i);
+            if (arr[i] > arr[i + 1]) {
+                // console.log('if (arr[i] > arr[i+1]) <== true ');
+                var temp = arr[i];
+                arr[i] = arr[i + 1]
+                arr[i + 1] = temp;
+            }
+            }
+        }
+        console.log(arr);
+        console.log('the second to the largest is ',arr[arr.length-2]);
+    }
+    arrSecondToLargest([42, 1, 4, 3, 7]);
+
+
+
+
+</script>

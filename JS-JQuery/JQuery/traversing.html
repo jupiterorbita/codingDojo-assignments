@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>traversing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+
+        $('p, h3').click(function(){
+            // $(this).parent().append('<h1>hi</h1>');
+            $(this).siblings().hide();
+        });
+        // $('div#myDiv').children('h3').css('background-color','green');
+
+        $('button').click(function(){
+            $(this).siblings().children().text('hello');
+        })
+
+    })
+
+    </script>
+</head>
+<body>
+    <div id="myDiv">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita alias non ut aliquam facere error a? Eveniet corrupti minus, eaque commodi veniam consequatur. Cumque sed cupiditate at id iusto!
+        </p>
+        <h3 id='john1'>John</h3>
+        <h3>George</h3>
+        <h3>Michael</h3>
+    </div>
+    <div>
+        <button>click here to chain </button>
+        <ul>
+            <li>something</li>
+            <li>something adasd</li>
+        </ul>
+    </div>
+</body>
+</html>

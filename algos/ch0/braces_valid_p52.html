@@ -1,0 +1,33 @@
+<script>
+//braces valid
+// given (){}[]
+//determine if it is valid
+
+//bc we are poping its the opposite
+var bracesObj = {
+                '}': '{',
+                ')': '(',
+                ']': '['
+                }
+
+//this function will check the validity between braces
+// this is invalid str = '[{(adsdas]})'
+// arr = ['[',]]
+function parenValid(str){
+    arr =[];
+    for (var i=0; i<str.length; i++){
+        if (str[i] === '{' || str[i]==='[' || str[i]==='('){
+            arr.push(str[i]);
+        }
+        if (str[i] !== '{' || str[i] !== '[' || str[i] !== '('){
+            continue;
+        }
+        // comparing the values to the bracesoj  key
+        //    ) } ]                 { [ (          
+        else if (bracesObj[str[i]] === str[i]){
+            return false;
+        }
+}
+parenValid('asd[{(skjdsd]})asdd')
+
+</script>

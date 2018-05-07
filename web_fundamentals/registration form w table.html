@@ -1,0 +1,80 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="description" content="This is a registration form">
+</head>
+<body>
+    <h1>My Registration Form</h1>
+    <br>
+<!--
+    <table>
+    
+    </thead>
+        <tbody>
+            <tr>
+                <td>Sample Name</td>
+                <td>an_email@gmail.com</td>
+               
+            </tr>
+            <tr>
+                <td>Another Name</td>
+                <td>another_email@gmail.com</td>
+                
+            </tr>
+        </tbody>
+    </table> -->
+
+        <!-- first name, last, name, email-->
+        <label for="first_name">First Name :</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="first_name" name="first_name">
+    <br>
+    <br>
+        <label for="last_name">Last Name :</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="last_name" name="last_name">
+    <br>
+    <br>
+        <label for="email">Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email">
+    <br>
+    <br>
+        <!--passrod/pw confirm-->
+        <label for="password">Password :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="password" name="password"> 
+    <br>
+    <br>
+        <label for="pw_confirm">PW Confirm :</label>&nbsp;
+        <input type="pw_confirm" id="pw_confirm" name="pw_confirm">
+    <br>
+    <br>
+        <!-- birthday-->
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date"> <img src="https://cdn4.iconfinder.com/data/icons/ecommerce-line-1/605/73_-_Calendar-256.png" width="30" height="30">
+    <br>
+    <br>
+        <!-- gender -->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+    <br>
+
+
+        <h4>A short description about yourself</h4>
+        <textarea name="description"></textarea>
+    <br>
+    <br>
+        <!-- fav language -->
+        Favorite Language
+        <select name="language">
+            <option value="javascript">Javascript</option>
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+        </select>
+    <br>
+    <br>
+        <input type="submit" value="Submit">
+
+</body>
+</html>

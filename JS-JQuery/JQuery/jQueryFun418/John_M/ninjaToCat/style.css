@@ -1,0 +1,23 @@
+/* Style for ninjaToCat */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 2px dotted red; */
+
+}
+
+.wrapper{
+    width: 150px;
+    margin-top:60px;
+    margin-left:60px;
+}
+img{
+    display: inline-block;
+}
+
+
+
+img#ninja0, #ninja1, #ninja2, #ninja3, #ninja4{
+    display: none;
+}

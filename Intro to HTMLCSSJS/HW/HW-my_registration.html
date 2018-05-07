@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Registration Form</title>
+        <meta name="description" content="HW assignment - My Registration Form">
+        <meta name="author" content="John M">
+    </head>
+
+    <body>
+        <h1>My Registration Form</h1>
+        <br>
+        <!-- <form> -->
+        <div id="main_form">
+            <!-- first name -->
+            <label for="first_name">First Name : </label>
+            <input type="text" id="first_name" name="first_name">
+            <br>
+            <!-- last name -->
+            <label for="last_name">Last Name : </label>
+            <input type="text" id="last_name" name="last_name">
+            <br> 
+            <!-- email -->
+            <label>
+                e-mail : <input type="email" name="email">
+            </label>
+            <br>
+            <!-- password -->
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password">
+            <br> 
+            <!-- password confirm -->
+            <label for="pw_confirm">Password Confirmation:</label>
+            <input type="password" id="pw_confirm" name="password_confirmation">
+            <br>
+            <!-- birthday -->
+            Birthday :
+            <input type="date" name=bday>
+            <br>
+            <!-- gender -->
+            <label>
+                Male <input type="radio" name="gender" value="male">
+            </label>
+            <label>
+                Female <input type="radio" name="gender" value="female">
+            </label>
+            <label>
+                Martian <input type="radio" name="gender" value="martian">
+            </label>
+            <br> 
+            <!-- text field -->
+            <p>A short description about yourself:</p>
+            <textarea name="descriptio"></textarea>
+            <br>
+            <!-- fav language -->
+            favorite language: 
+            <select name="language">
+                <option value="javascipt">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="cpp">C++</option>
+            </select>
+            <br>
+            <!-- </form> -->
+            <!-- submit -->
+            <input type="submit" value="Submit">
+        </div>            
+        </body>
+</html>

@@ -1,0 +1,25 @@
+<script>
+// coin change
+function coinChange(cents){
+  var change =0;
+  var quaters=0;
+  var dimes=0;
+  var nickels=0;
+  var pennies=0;
+  
+  change = cents % 25;
+  quaters = Math.floor(cents/25);
+  
+  dimes=Math.floor(change/10);
+  change=change%10;
+  
+  nickels=Math.floor(change/5);
+  pennies=change%5;
+  
+  console.log('quaters '+quaters);
+  console.log('dimes '+dimes);
+  console.log('nickels '+nickels)
+  console.log('pennies '+pennies);
+}
+coinChange(94);
+</script>

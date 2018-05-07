@@ -1,0 +1,46 @@
+<script>
+/*
+Fancy Array
+Normally, if you print an array such as ["James", "Jill", "Jane", "Jack"], 
+you will see the following:
+
+[ "James", "Jill", "Jane", "Jack" ]
+Let's make it look fancy! Write a function that will make it print like:
+
+0 -> James
+1 -> Jill
+2 -> Jane
+3 -> Jack
+Bonus (Only If You Have Time):
+
+Let the user pass in the symbol that will print (ex: "->", "=>", "::", "-----")
+Have an extra parameter reversed. If the user passes true, print the elements in reverse order */
+
+var symbol;
+var reversed;
+function fancyArray(arr,symbol,reversed){
+    // var arr=["james","jill","jane","jack"];
+    console.log(arr);
+    // console.log(symbol);
+    for (var i=0; i<arr.length; i++){
+        console.log(i + symbol + arr[i]);
+    }
+    if (reversed == true){
+        // console.log("hi");
+        reverseArray(arr);
+    }
+}
+
+function reverseArray(arr){
+    // console.log(arr)
+    // console.log(arr.length-1)
+    for (var idx = arr.length-1; idx>=0; idx--) {
+        // console.log(idx);
+        console.log(arr[idx]);
+    }
+}
+
+fancyArray(["james","jill","jane","jack"],"---->",1);
+// reverseArray(['james','jill','jane','jack']);
+
+</script>

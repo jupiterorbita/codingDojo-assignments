@@ -1,0 +1,204 @@
+/* CSS for python-html */
+*{
+    /* outline: dotted red; */
+    color: white;
+}
+div.wrapper{
+    /* outline: dotted red; */
+    width: 970px;
+    min-height: 100px;
+    padding: 2px;
+}
+
+    div.header, div.content, div.content2{
+        /* outline: dotted red; */
+        width: 100%;
+        min-height: 100px;
+    }
+/* HEADER - top part  */
+    div.header{
+        background-color: rgb(26,79,120);
+    }
+
+.topsearch span{
+
+}
+
+        img{
+            height: 100%;
+            width: 400px;
+            display: inline-block;
+        }
+        div.head-right{
+            background-color: rgb(26,79,120);
+            min-height: 120px;
+            width: 250px;
+            vertical-align: top;
+            display: inline-block;
+            margin-left: 300px;
+        }
+            div.topseach, div.botsearch{
+                /* outline: dotted red; */
+                min-height: 40px;
+                width: 100%;
+            }
+            div.topsearch{
+                margin-top:8px;
+                margin-left: 70px;
+                background-color: rgb(26,79,120);
+            }
+            div.botsearch{
+                border-radius: 5px;
+                background-color: rgb(61, 58, 58);
+            }
+            span.u{
+                text-decoration: underline;
+            }
+            input{
+                margin-top:10px;
+                margin-left: 40px;
+            }
+            button{
+                /* outline: dotted red; */
+                border-radius: 5px;
+                margin-top: 5px;
+                /* margin-top: 20px;
+                margin-left: 38%;
+                margin-right: 20%;
+                padding-left: 10px;
+                padding-right: 10px; */
+                background-color: rgb(0, 60, 128);
+                vertical-align: top;
+                text-align: center;
+                width: 40px;
+                height: 30px;
+                color: white;
+                border: 1px solid black;
+            }
+/* MAIN CONTENT */
+    div.content{
+        background-color: rgb(26,79,120);
+        
+    }
+/* TOP about downloads doc comm... */
+        div.topnav{
+            background-color: rgb(35, 119, 168);
+            margin-left: 40px;
+            width: 870px;
+            min-height: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            vertical-align: top;
+            border: solid 1px black;
+        }
+            h2{
+                display: inline-block;
+                margin-left: 34px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                vertical-align: top;    
+            }
+        div.leftnav{
+            background-color: rgb(26,79,120);
+            height: 200px;
+            width: 180px;
+            margin-left:70px;
+            display: inline-block;
+        }
+    /* LEFT TABLE  */
+            ul.leftlist{
+                /* margin: 0 auto; */
+                text-align: center;
+                text-decoration: underline;
+            }
+            ol{
+                text-align: left;
+                padding: 0px;
+            }
+        
+/* RIGHT lorem text and yellow center */
+        div.rightmain{
+            background-color: rgb(26,79,120);
+            min-height: 120px;
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            text-align: center;
+        }
+            p.blah{
+                font-size: 13px;
+            }
+            p.quote{
+                color: goldenrod;
+            }
+
+/* white content page  */
+    div.content2{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+        div.leftwhite{
+            border-top: 2px solid blue;
+            margin-left: 80px;
+            min-height: 100px;
+            background-color: rgb(255,255,255);
+            width: 390px;
+            display: inline-block;
+            color: black;
+            vertical-align: top;
+            text-align: center;
+            margin-top: 10px;
+        }
+        div.rightwhite{
+            border-top: 2px solid blue;
+            margin-left: 10px;
+            margin-top: 10px;
+            min-height: 100px;
+            background-color: rgb(255,255,255);
+            width: 390px;
+            display: inline-block;
+            color: black;
+            vertical-align: top;
+            text-align: center;
+
+        }
+        h3{
+            color: black;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        p.blacktext{
+            margin-top: 5px;
+            color: black;
+        }
+        ul.listblue{
+            color: blue;
+        }
+/* footer of the page */
+    div.footer{
+        background-color: rgb(26,79,120);
+        min-height: 100px;
+        width: 100%;
+    }
+        h3.last{
+            margin: 0 auto;
+            color: rgb(120, 170, 220);
+            padding-top: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+            /* margin-top: 10px; */
+            vertical-align: bottom;
+            display: inline-block;
+            /* outline: dotted red; */
+        }
+        p.smalltext{
+            color: rgb(120, 170, 220);
+            text-align: center;
+            font-size: 10pt;
+        }
+       h3.spacer{
+           margin-left: 80px;
+       }

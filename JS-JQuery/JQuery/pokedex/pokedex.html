@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="pokedex.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+        for (var i=400; i<=405; i++){
+                var apiUrl = 'https://pokeapi.co/api/v2/pokemon/'+i+'/';
+              
+                $.get(apiUrl,function(data){
+                    var newi= i;
+                    console.log(data);
+                    console.log(data.forms[0].name);
+              var imgUrl = data.sprites.front_default;
+              var idID = data.id;
+                $('div.main').append('<img src='+imgUrl+' pokeid='+idID+'>');
+            })
+        }
+
+
+        $('.main').on('click','img',function(){
+            var pokeid = $(this).attr('pokeid');
+            var clickurl = 'https://pokeapi.co/api/v2/pokemon/'+pokeid+'/';
+            console.log('what is this pokeid',pokeid);
+            $.get(clickurl,function(data){
+                imgsideUrl = data.sprites.front_default;
+                name = data.name;
+                heightid = data.height;
+                weightid = data.weight;
+                typeID1 = data.types[0].type.name;
+                if (data.types.length===2){
+                    typeID2 = data.types[1].type.name;
+                }
+                console.log('*** DATA TYPES:'+data.types[0].type.name);console.log('data type2 = '+data.types[1].type.name);
+                $('div.side').html('<h1>'+name+"</h1><img class='rightimg' src="+imgsideUrl+"><br>ID = "+pokeid+"<h4>Height:</h4><p>"+heightid+"</p><h4>Weight</h4><p>"+weightid+"</p>");
+                console.log('data 2',data);
+            })
+
+        })
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h1>pokemon</h1>
+
+
+
+
+
+        </div>
+        <div class="side">
+<h4> ===> Select a Pokemon</h4>
+
+        </div>
+    </div>
+    pokedex
+</body>
+
+</html>

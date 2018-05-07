@@ -1,0 +1,42 @@
+/* contact card css */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 2px dotted red; */
+}
+
+div.wrapper{
+    min-height: 1000px;
+    width: 1000px;
+    background-color: lightblue;
+}
+h1{
+    margin-bottom: 30px;
+}
+h4{
+    margin-top: 20px;
+}
+
+.leftdiv{
+    min-height: 500px;
+    width: 450px;
+    margin: 5px;
+    background-color: rgb(223, 209, 209);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rightdiv{
+    min-height: 500px;
+    width: 450px;
+    margin: 5px;
+    background-color: rgb(153, 241, 193);
+    display: inline-block;
+    vertical-align: top;
+    /* border: solid red; */
+}
+div.contact{
+    background-color: blue;
+    color: white;
+}

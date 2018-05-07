@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="contactCard.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var descr;
+            //using dynamic method
+            $(document).on('submit', 'form', function () {
+                var fname = $('#first1_name').val();
+                var lname = $('#last2_name').val();
+                descr = $('#txt').val();
+                $('div.rightdiv').append('<div.contact><h2>' + fname + ' ' + lname + '</h2></div><h4>click here for the description</h4>');
+
+                return false;
+            })
+
+            $(document).on('click', 'h4', function () {
+                $('.rightdiv').html('<h2>description is: </h2><p>' + descr + '</p>');
+            })
+        })
+
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="leftdiv">
+            <form action='process.php' method="post">
+                <h1>add contact</h1>
+                <!-- FIRST NAME -->
+                <label for='first_name'>First Name</label>
+                <input for="first_name" id='first1_name' name="first_name" placeholder="ex. John">
+                <br>
+                <!-- LAST NAME -->
+                <label for='last_name'>Last Name</label>
+                <input for='last_name' id='last2_name' name='last_name' placeholder="ex. Smith">
+                <h4>Description:</h4>
+                <textarea id='txt' name="description" placeholder="write something"></textarea>
+                <br>
+                <!-- submit button -->
+                <input type="submit" value='submit'>
+            </form>
+        </div>
+        <div class="rightdiv">
+
+        </div>
+    </div>
+</body>
+
+</html>

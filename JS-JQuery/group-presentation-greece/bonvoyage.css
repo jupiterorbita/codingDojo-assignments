@@ -1,0 +1,16 @@
+/* css for bonvoyage.css */
+
+.wrapper{
+    width: 500px;
+    min-height: 400px;
+    margin-left: 400px;
+}
+
+
+img.a{
+    width:500px;
+    /* display: inline-block; */
+}
+img.b{
+    width:600px;
+}
